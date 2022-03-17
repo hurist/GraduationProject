@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setting.SettingActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/aqua"
+                android:text="提醒"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:id="@+id/remind_tips"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="自动提醒"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:id="@+id/remind_switch"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:id="@+id/remind_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每日提醒时间  20:00"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/aqua"
+                android:text="夜间模式"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="自动开启夜间模式"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:id="@+id/auto_night_model_switch"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:id="@+id/night_model_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每日提醒时间  20:00"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/aqua"
+                android:text="编辑"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="记录未来的日记"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:id="@+id/record_future_switch"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="记录位置"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:id="@+id/record_location_switch"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="记录天气"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:id="@+id/record_weather_swith"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="返回自动保存"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp"/>
+
+                <Switch
+                    android:id="@+id/auto_save_swith"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

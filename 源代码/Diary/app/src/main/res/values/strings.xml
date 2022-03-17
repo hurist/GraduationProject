@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="navigation_drawer_open"></string>
+    <string name="navigation_drawer_close"></string>
+
+    <string name="tips">
+         tips:\n
+        1、不选择时间将导出全部日记\n
+        2、只选择起始时间将导出起始时间至今的所有日记\n
+        3、只选择截止时间将导出最初至截止时间的所有日记
+    </string>
+
+    <string-array name="weathers">
+        <item>晴</item>
+        <item>多云</item>
+        <item>阴</item>
+        <item>雨</item>
+        <item>雪</item>
+        <item>霾</item>
+        <item>雾</item>
+        <item>未知</item>
+    </string-array>
+    <integer-array name="weatherIds">
+        <item>100</item>
+        <item>101</item>
+        <item>104</item>
+        <item>399</item>
+        <item>499</item>
+        <item>502</item>
+        <item>501</item>
+        <item>999</item>
+    </integer-array>
+</resources>

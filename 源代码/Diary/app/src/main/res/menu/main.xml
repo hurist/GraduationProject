@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="80"
+        android:title="搜帖"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/order"
+        android:orderInCategory="100"
+        android:title="按时间顺序"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/viewModel"
+        android:orderInCategory="100"
+        android:title="切换展示模板"
+        app:showAsAction="never" />
+</menu>

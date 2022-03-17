@@ -1,0 +1,29 @@
+//引入高德JSAPI
+<script type="text/javascript" src = 'https://webapi.amap.com/maps?v=1.4.4&test=true&key=8e9d3050695ac868cc67257d84a5f740&plugin=AMap.ToolBar,AMap.IndoorMap'></script>
+
+<script type="text/javascript">
+  var log = document.getElementsByClassName('log')[0];
+  var map = new AMap.Map('container',{
+    resizeEnable: true,
+    zoom: 10,
+    center: [116.43, 39.9]
+  });
+  AMap.plugin(['AMap.Geolocation'],
+  function(){
+    geo  = new AMap.Geolocation({
+      useNative:true
+    })
+    geo.on('complete',function(e){
+      log.innerHTML+=e.info+' '+e.position+' '+e.message.split('.')[0]+'</br>'
+    })
+    geo.on('fail',function(e){
+     log.innerHTML+=e.info+e.message.split('.')[0]+'</br>'
+    })
+  // map.addControl(geo);
+});
+</script>
+
+//获取位置按钮
+<button class = 'bt' onclick='geo.getCurrentPosition()'>获取位置</button>
+<button class = 'bt' onclick='geo.watchPosition()'>连续定位</button>
+<button class = 'bt' onclick='geo.clearWatch()'>停止定位</button>

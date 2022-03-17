@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".writediary.WriteDiaryAvtivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            app:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/tag"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/tag" />
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@color/add_img_background" />
+
+                <RelativeLayout
+                    android:id="@+id/add_img_panel"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent_black">
+
+                    <TextView
+                        android:id="@+id/add_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/background_white"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:text="+"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/delete_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/delete_img"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:textColor="@color/font_black"
+                android:text="2019/12/13  20:18"/>
+
+            <ImageView
+                android:id="@+id/weather"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"
+                android:src="@mipmap/weather_103"/>
+
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:padding="@dimen/dp_4"
+                android:gravity="start"
+                android:minLines="10"
+                android:hint="记录你的生活"
+                android:background="@color/background_white" />
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginRight="6dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/location"/>
+
+                <TextView
+                    android:id="@+id/tv_localtion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="N\\A"
+                    android:textColor="@color/font_black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/background_white"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/calendar"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/calendar"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/time"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/time"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_4"
+            android:text="文"/>
+        <TextView
+            android:id="@+id/wordcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="10dp"
+            android:text="字"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

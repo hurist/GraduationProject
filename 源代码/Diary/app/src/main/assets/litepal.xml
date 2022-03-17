@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="diary" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.ffcc66.diary.bean.Diary"/>
+        <mapping class="com.ffcc66.diary.bean.Tag"/>
+    </list>
+</litepal>

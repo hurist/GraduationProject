@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00000000</color><!--透明色 -->  
+
+    
+    <color name="black">#000000</color><!--黑色 -->   
+    <color name="gray_cc">#cccccc</color><!--灰色cc -->   
+    <color name="gray_8f">#8f8f8f</color><!--灰色8f -->   
+    <color name="white">#ffffff</color>
+
+    <color name="gray_ec">#ececec</color><!--灰色cc -->  
+
+    <color name="transparent_black">#c0616161</color> <!--添加图片加号背景-->
+    <color name="red">#ff0000</color>
+    <color name="aqua">#00FFFF</color><!--浅绿色 -->  
+    <color name="background_white">#ffffff</color> 
+    <color name="font_black">#000000</color>
+    <color name="font_gray">#939393</color>
+    <color name="line_gray">#8f8f8f</color>
+
+    <color name="toolbar">#008577</color>
+    <color name="detail_background">#ffffff</color>
+    <color name="add_img_background">#ececec</color>
+</resources>

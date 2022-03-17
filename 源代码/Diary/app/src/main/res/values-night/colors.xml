@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_white">#262626</color> 
+    <color name="font_black">#cacaca</color>
+    <color name="font_gray">#7e7e7e</color>
+    <color name="line_gray">#8f8f8f</color>
+
+    <color name="toolbar">#212121</color>
+    <color name="detail_background">#303030</color>
+    <color name="add_img_background">#737373</color>
+</resources>

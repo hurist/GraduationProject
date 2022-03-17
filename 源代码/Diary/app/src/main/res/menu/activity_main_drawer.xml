@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_group_one"
+        android:checkableBehavior="none">
+        <item android:id="@+id/nav_statistical"
+            android:title="统计"/>
+        <item android:id="@+id/nav_classify"
+            android:title="分类"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_group_two"
+        android:checkableBehavior="none">
+            <item
+                android:id="@+id/nav_backup"
+                android:title="备份" />
+
+            <item
+                android:id="@+id/nav_import_export"
+                android:title="导出日记" />
+    </group>
+
+    <group
+        android:id="@+id/nav_group_three"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_night_model"
+            android:title="夜间模式"
+            app:actionLayout="@layout/switch_item"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="设置" />
+    </group>
+
+</menu>
